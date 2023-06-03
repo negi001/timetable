@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro {
+    width: 100%;
+    height: 260px;
+}
+
+h1 {
+    padding: 20px 0px 10px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+#cards {
+    margin-top: 80px;
+}

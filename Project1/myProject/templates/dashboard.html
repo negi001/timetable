@@ -1,0 +1,180 @@
+{% block content %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'dashboardPage.css' %}" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">TIME TABLE GENERATOR</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link inactive" aria-current="page" href="#">|</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Get Started</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Add Teachers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Add Rooms</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Add Timmings</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Add Courses</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Add Departments</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Add Sections</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Generate Timetable</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link inactive" aria-current="page" href="#">|</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Welcome, Ayush</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="intro bg-body-secondary mb-5">
+      <div class="container">
+        <h1>Hello, Ayush ! Lets Get started with TTGS</h1>
+        <p>
+          Welcome to TTGS, a timetable management system for colleges and
+          universities to schedule their organization's timetable TTGS started
+          off as a company that formed strong relationship with schools,
+          colleges and universities to schedule their organization to help them
+          to generate their timetable with ease and maximum efficiency thus
+          saving the organization's valuable time. Get started by refering the
+          flow of the system below.
+        </p>
+        <div>
+          <button type="button" class="btn btn-primary">Get Started >></button>
+          <button type="button" class="btn btn-primary">Contact Us >></button>
+        </div>
+        <div class="container" id="cards">
+          <div class="row">
+            <div class="col">
+              <h4>1. Add Teachers</h4>
+              <p>
+                Navigate to the "Add Teachers" section and add their
+                corresponding details. Incorrect Details can also be removed via
+                the "Edit Teacher" option.
+              </p>
+            </div>
+            <div class="col">
+              <h4>2. Add Rooms</h4>
+              <p>
+                Navigate to the "Add Rooms" section and add their corresponding
+                details. Incorrect Details can also be removed via the "Edit
+                Room" option.
+              </p>
+            </div>
+            <div class="col">
+              <h4>3. Add Timmings</h4>
+              <p>
+                Navigate to the "Add Timmings" section and add their corresponding
+                details. Incorrect Details can also be removed via the "Edit
+                Timming" option.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+              <h4>4. Add Courses</h4>
+              <p>
+                Navigate to the "Add Courses" section and add their
+                corresponding details. Incorrect Details can also be removed via
+                the "Edit Course" option.
+              </p>
+            </div>
+            <div class="col">
+              <h4>5. Add Departments</h4>
+              <p>
+                Navigate to the "Add Departments" section and add their corresponding
+                details. Incorrect Details can also be removed via the "Edit
+                Department" option.
+              </p>
+            </div>
+            <div class="col">
+              <h4>6. Add Sections</h4>
+              <p>
+                Navigate to the "Add Sections" section and add their corresponding
+                details. Incorrect Details can also be removed via the "Edit
+                Section" option.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+{% endblock %}
